@@ -43,8 +43,18 @@
     border: 1px hidden black; 
     float:left; 
 }
-
-
+.white{
+    background-color:white !important;
+}
+.white > h1{
+    background-color:white !important;
+}
+.gray{
+    background-color:#f8f8f8 !important;
+}
+.gray > h1{
+    background-color:#f8f8f8 !important;
+}
 body{
     font-family: Arial; 
     margin: 0 auto;
@@ -73,7 +83,7 @@ body{
     text-decoration: none;
     list-style: none;
     float:left; 
-    padding:0 ;
+    padding: 0 ;
     margin: 0;
 }
 
@@ -171,11 +181,11 @@ body{
     width: 550px;
     height: 50px;
     position: relative;
-    top: 50px; 
+    top: 50px;
+    left: 40px;
 }
 .navigation > ul{
     margin: 0 auto;
-    diplay: block-inline; 
     text-decoration: none; 
 }
 .navigation > ul > li{
@@ -189,6 +199,23 @@ body{
     text-align: center;
     padding-left: 15px; 
 }
+.navigation2 > ul > li::after { 
+    content: " /"; 
+    padding-left: 7px; 
+    color: #f55856;
+}
+.navigation > ul > li::after { 
+    content: " /"; 
+    padding-left: 7px; 
+    color: #f55856;
+}
+.navigation > ul > li:last-child::after{
+    content: ""; 
+}
+.navigation2 > ul > li:last-child::after{
+    content: ""; 
+}
+
 .navigation > ul > li > a:link{
     text-decoration: none; 
 }
@@ -196,14 +223,7 @@ body{
     color: black;
     text-decoration: none;
 }
-.slash {
-    text-decoration: none; 
-    font-family: m300;
-    color:  #f55856;
-    font-size: 18px;
-    line-height: 14px;
-    text-align: center;
-}
+
 .right_icons{
     float: right; 
     height: 40px;
@@ -328,7 +348,8 @@ body{
     height: 30px;
     width: 300px; 
     margin: 0 auto;
-    z-index: 2;
+    position: absolute;
+    left: 665px; 
     clear:both; 
     background-color: #f8f8f8;
  
@@ -345,9 +366,7 @@ body{
     height: 10px;
     width: 1165px;
     margin: 0 auto; 
-    position: relative;
-    bottom: 28px; 
-    z-index: 1;
+    padding-top: 23px; 
 }
 .border_solid{
     height: 3px;
@@ -442,23 +461,23 @@ body{
 .box3 > h1{
     font-family: m300;
     color:  #000000;
-    font-size: 18px;/* Przybliżenie (wynika z podstawienia czcionki) */
-    line-height: 14px;/* Przybliżenie (wynika z podstawienia czcionki) */
+    font-size: 18px;
+    line-height: 14px;
     text-align: left;
 }
 .box3 > h2{
     font-family: m300;
     color:  white;
-    font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
-    line-height: 42px;/* Przybliżenie (wynika z podstawienia czcionki) */
+    font-size: 20px;
+    line-height: 42px;
     text-align: center;
     background-color: #463f3a; 
 }
 .box3 > p{
-    font-family: m300;
+    font-family: m500;
     color:  #000000;
-    font-size: 20px;/* Przybliżenie (wynika z podstawienia czcionki) */
-    line-height: 14px;/* Przybliżenie (wynika z podstawienia czcionki) */
+    font-size: 20px;
+    line-height: 14px;
     text-align: left;  
 }
 
@@ -619,6 +638,10 @@ body{
     position: relative;
     bottom: 15px; 
 }
+.logo2_img{
+    height: 52px;
+    width: 22px; 
+}
 
 .navigation2{
     margin: 0 auto;
@@ -626,10 +649,10 @@ body{
     height: 50px;
     position: relative;
     top: 50px; 
+    left: 40px;
 }
 .navigation2 > ul{
-    margin: 0 auto;
-    diplay: block-inline; 
+    margin: 0 auto; 
     text-decoration: none; 
 }
 .navigation2 > ul > li{
@@ -680,12 +703,14 @@ body{
 .icons{   
 }
 .icons > img {
-    padding-left: 10px; 
+    padding-left: 10px;
+    padding-top: 10px; 
 }  
 
 img1{
     height:19px;
     width: 19px;
+    background-color: black; 
 }
 img2{
     height:10px;
@@ -709,7 +734,7 @@ img5{
     width: 400px;
     float: right;
     position: relative;
-    bottom: 15px; 
+    bottom: 20px; 
 }
 
 .designed > p {
@@ -721,3 +746,4 @@ img5{
     margin: 0;
     padding: 0 ; 
 }  
+
